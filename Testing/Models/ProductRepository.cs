@@ -21,7 +21,7 @@ namespace Testing.Models
         public Product GetProduct(int id)
         {
             return _conn.QuerySingle<Product>("SELECT * FROM PRODUCTS WHERE PRODUCTID = @id",
-                new { id = id });
+                new {id = id });
         }
 
         public void UpdateProduct(Product product)
